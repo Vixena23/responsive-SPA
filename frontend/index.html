@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page App</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+</head>
+<body class="bg-own">
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+
+            <a class ="navbar-brand ms-3" href="/" data-link>
+                <img src="./static/img/logo2.png" alt="" width="30" height="30" class="d-inline-block align-text-top"/>
+                ominik
+            </a>
+
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" 
+                    aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacyjny">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" data-link> Start </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button"
+                        aria-expanded="false" id="submenu" aria-haspopup="true"> Gry </a>
+                        <div class="dropdown-menu" aria-labelledby="submenu">
+                            <a class="dropdown-item" href="/kolkokrzyzyk" data-link> Kółko i krzyżyk </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pizzeria" data-link> Pizzeria </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/omnie" data-link> O mnie </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled " href="projekty" data-link> Projekty </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt" data-link> Kontakt </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="app"></div>
+
+
+    <script type="module" src="./static/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="./static/js/bootstrap.min.js"></script>
+
+</body>
+</html>
